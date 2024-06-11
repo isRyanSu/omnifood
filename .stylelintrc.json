@@ -1,6 +1,7 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
   "rules": {
-    "comment-whitespace-inside": null
+    "color-hex-length": "long",
+    "comment-empty-line-before": null
   }
 }
