@@ -74,11 +74,63 @@ body {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  background-color: #fdf2e9;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e67e22;
+}
+
+.main-nav-cta:link,
+.main-nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: #ffffff;
+  background-color: #e67e22;
+  border-radius: 1rem;
+}
+
+.main-nav-cta:hover,
+.main-nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                    Hero                                    */
 /* -------------------------------------------------------------------------- */
 
 .section-hero {
-  padding: 9.6rem;
+  padding: 4.8rem 0 9.6rem;
   background-color: #fdf2e9;
 }
 
@@ -88,6 +140,7 @@ body {
   gap: 9.6rem;
   align-items: center;
   max-width: 130rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
