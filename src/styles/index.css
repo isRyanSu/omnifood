@@ -67,8 +67,125 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Rubik, sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #555555;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Hero                                    */
+/* -------------------------------------------------------------------------- */
+
+.section-hero {
+  padding: 9.6rem;
+  background-color: #fdf2e9;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin-bottom: 3.2rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333333;
+  letter-spacing: -0.5px;
+}
+
+.hero-description {
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 8rem;
+}
+
+.hero-customers {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.hero-customer-imgs {
+  display: flex;
+}
+
+.hero-customer-img {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+  border-radius: 50%;
+}
+
+.hero-customer-img:last-child {
+  margin-right: 0;
+}
+
+.hero-customer-info {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hero-customer-info span {
+  font-weight: 700;
+  color: #e67e22;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   General                                  */
+/* -------------------------------------------------------------------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 1rem;
+
+  /* Put transition on original "state" */
+  transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #ffffff;
+  background-color: #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  color: #555555;
+  background-color: #ffffff;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #ffffff;
 }
