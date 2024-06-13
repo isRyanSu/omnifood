@@ -29,6 +29,14 @@
   align-items: center;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -63,6 +71,25 @@
   color: #e67e22;
   text-transform: uppercase;
   letter-spacing: 0.75px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  padding-bottom: 0.2rem;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentcolor;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 .btn:link,
@@ -101,4 +128,20 @@
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-style: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+  border-radius: 1.2rem;
+}
+
+/* --------------------------------- Element -------------------------------- */
+
+strong {
+  font-weight: 500;
 }
