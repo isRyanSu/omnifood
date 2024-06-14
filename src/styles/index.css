@@ -656,3 +656,76 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer {
+  padding: 12.8rem 0;
+  background-color: #eeeeee;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-link {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-copyright {
+  margin-top: auto;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+}
+
+.footer-heading {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer-navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-navigation-link:link,
+.footer-navigation-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-navigation-link:hover,
+.footer-navigation-link:active {
+  color: #e67e22;
+}
+
+.footer-address {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer-address-text {
+  margin-bottom: 2.4rem;
+}
