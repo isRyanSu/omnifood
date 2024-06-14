@@ -62,6 +62,11 @@
   margin: 0;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230 125 34 / 50%);
+}
+
 html {
   font-size: 62.5%; /* 10px / 16px = 62.5% */
 }
@@ -563,4 +568,91 @@ body {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     CTA                                    */
+/* -------------------------------------------------------------------------- */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 1.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 15%);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(253 242 233 / 50%);
+}
+
+.cta-form-box {
+  padding: 4.8rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta-form-title {
+  margin-bottom: 3.2rem;
+  color: #45260a;
+}
+
+.cta-form-text {
+  margin-bottom: 4.8rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem 3.2rem;
+}
+
+.cta-form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-form-row label {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cta-form-row input,
+.cta-form-row select {
+  width: 100%;
+  padding: 1.2rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: inherit;
+  background-color: #fdf2e9;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.cta-from-row input::placeholder {
+  color: #aaaaaa;
+}
+
+.cta-form-row select {
+  appearance: none;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(235 150 76 / 35%),
+      rgb(230 125 34 / 35%)
+    ),
+    url('/public/cta.jpg');
+  background-position: center;
+  background-size: cover;
 }
